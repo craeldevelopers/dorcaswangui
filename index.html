@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dorcas Wangui Shamalla - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .slide-in {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+      }
+      .rotate-in {
+        transform: rotate(-90deg);
+        opacity: 0;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dorcas Wangui Shamalla</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dorcas Wangui Shamalla</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="about-me.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profile.png" alt="Dorcas Wangui Shamalla profile picture" class="fade-in" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 slide-in">Hello, I'm</p>
+        <h1 class="title slide-in">Dorcas Wangui Shamalla</h1>
+        <p class="section__text__p2 slide-in">Head of Program Operations at AECF</p>
+        <div class="btn-container slide-in">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('resume-example.pdf')"
+            style="background-color: black; border: 2px solid #dac5a7; color: #dac5a7;"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container" class="slide-in">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/wanguimuturi'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>10+ years<br />Program Operations & Risk Management</p>
+              <button class="btn btn-color-2" onclick="location.href='experience.html'">
+                View All
+              </button>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MBA in Finance<br />University of Nairobi</p>
+              <button class="btn btn-color-2 translucent bottom-positioned rounded-rectangle" onclick="location.href='education.html'">
+                View All
+              </button>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              With a robust background in risk and compliance, my role at AECF focuses on enhancing program delivery through the development of scalable processes and systems. At the heart of my mission lies the commitment to strengthen AECF's impact across Africa, leveraging my analytical acumen and financial risk management skills. My tenure at Kenya Airways was marked by the successful design and rollout of a Risk & Compliance Framework, integral to the airline's strategic turnaround. This, coupled with my experience in operational risk management, underscores my dedication to building resilient organizations and advancing good corporate governance within dynamic environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+      <div class="premium-button-container">
+        <button class="btn btn-premium wide-button" onclick="location.href='about-me.html'">
+          <span class="btn-text">Discover My Journey</span>
+          <span class="btn-icon">→</span>
+        </button>
+        <style>
+          .wide-button {
+            min-width: 250px;
+            white-space: nowrap;
+          }
+        </style>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Professional Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Head of Program Operations</h3>
+                  <p>AECF (Oct 2023 - Present)</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Senior Manager, Risk & Compliance</h3>
+                  <p>Kenya Airways (Jan 2022 - Oct 2023)</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Enterprise Risk Manager</h3>
+                  <p>AECF (Jul 2018 - Dec 2021)</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Risk Management</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Program Operations</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Financial Analysis</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Strategic Planning</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#volunteering'"
+      />
+    </section>
+    <section id="volunteering">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Volunteering Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Field Campaigner</h2>
+            <p>Kenya Red Cross (Jan 2008 - Jan 2010)</p>
+            <p>Kenyan slum fire campaigns</p>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Mentor</h2>
+            <p>Pumwani Girls Secondary School (Jan 2013 - Present)</p>
+            <p>Mentorship program for teenage girls aged between 15 & 18 years</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:dorcas.shamalla@aecfafrica.org">dorcas.shamalla@aecfafrica.org</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/wanguimuturi">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="about-me.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Dorcas Wangui Shamalla. All Rights Reserved.</p>
+    </footer>
+    <script>
+      // Intersection Observer for fade-in and slide-in animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in, .slide-in').forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Rotate-in animation for icons
+      document.querySelectorAll('.icon').forEach((icon) => {
+        icon.classList.add('rotate-in');
+        observer.observe(icon);
+      });
+
+      // Typing effect for the title
+      function typeWriter(element, text, i = 0) {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(() => typeWriter(element, text, i), 100);
+        }
+      }
+
+      const title = document.querySelector('.title');
+      const titleText = title.innerHTML;
+      title.innerHTML = '';
+      setTimeout(() => typeWriter(title, titleText), 1000);
+
+      // Parallax effect for profile picture
+      window.addEventListener('scroll', () => {
+        const profilePic = document.querySelector('.section__pic-container img');
+        const scrollPosition = window.pageYOffset;
+        profilePic.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

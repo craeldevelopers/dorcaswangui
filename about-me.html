@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Dorcas Wangui Shamalla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      @media screen and (max-width: 768px) {
+        .section-container, .card-container, .timeline-container, .skills-container {
+          flex-direction: column;
+        }
+        .section__pic-container, .text-container, .card, .timeline-item, .skill-item {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 2rem;
+        }
+        .parallax-container {
+          height: 200px;
+        }
+        .testimonial-container {
+          padding: 1rem;
+        }
+      }
+      .parallax-container {
+        background-image: url('parallax-bg.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .parallax-text {
+        color: #fff;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+      .skill-item {
+        width: calc(33.33% - 1rem);
+        margin-bottom: 1rem;
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .skill-item i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      .testimonial-container {
+        background-color: #f9f9f9;
+        padding: 2rem;
+        margin-top: 2rem;
+        border-radius: 8px;
+      }
+      .testimonial {
+        font-style: italic;
+        text-align: center;
+      }
+      .testimonial-author {
+        text-align: right;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Dorcas Wangui Shamalla</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Dorcas Wangui Shamalla</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+              <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+              <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section id="about-me" class="premium-section" style="width: 100vw; max-width: 100%; margin: 0; padding: 0;">
+      <style>
+        @media (min-width: 769px) {
+          .about-pic {
+            width: 300px;
+            height: 300px;
+          }
+        }
+        @media (max-width: 768px) {
+          .section-container {
+            flex-direction: column;
+          }
+          .section__pic-container {
+            margin-bottom: 1rem;
+          }
+          .text-container {
+            order: 2;
+          }
+          .about-pic {
+            width: 200px;
+            height: 200px;
+          }
+        }
+        .about-pic {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      </style>
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <h1 class="title fade-in">About Me</h1>
+        <p class="subtitle slide-in">Head of Program Operations at AECF</p>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="profile.png"
+              alt="Profile picture"
+              class="about-pic rotate-in"
+            />
+          </div>
+          <div class="text-container">
+            <h2 class="fade-in-up">Professional Overview</h2>
+            <p class="fade-in-up">
+              As Head of Program Operations at AECF, I leverage my extensive background in risk and compliance to enhance program delivery through scalable processes and systems. My mission is to strengthen AECF's impact across Africa, utilizing my analytical acumen and financial risk management expertise.
+            </p>
+            <p class="fade-in-up">
+              During my tenure at Kenya Airways, I successfully designed and implemented a Risk & Compliance Framework crucial to the airline's strategic turnaround. This experience, combined with my proficiency in operational risk management, exemplifies my commitment to building resilient organizations and promoting sound corporate governance in dynamic environments.
+            </p>
+            <div class="cta-container">
+              <a href="contact.html" class="btn pulse">Contact Me</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="parallax-container">
+          <h2 class="parallax-text">Transforming Organizations Through Strategic Risk Management</h2>
+        </div>
+
+        <div class="card-container">
+          <div class="card flip-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Risk Management</h3>
+                <p style="text-align: center;">Expertise in developing and implementing risk management frameworks, focusing on enterprise risk assessment, mitigation strategies, and compliance monitoring.</p>
+              </div>
+              <div class="card-back">
+                <h3>Risk Management Expertise</h3>
+                <ul style="margin-top: 0; padding-left: 20px;">
+                  <li>Developing comprehensive risk management frameworks</li>
+                  <li>Conducting enterprise risk assessments</li>
+                  <li>Designing effective risk mitigation strategies</li>
+                  <li>Implementing robust compliance monitoring systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card flip-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Program Operations</h3>
+                <p style="text-align: center;">Skilled in enhancing program delivery through scalable processes and systems, focusing on process optimization, operational efficiency, and performance metrics implementation.</p>
+              </div>
+              <div class="card-back">
+                <h3>Program Delivery Enhancement</h3>
+                <ul style="margin-top: 0; padding-left: 20px;">
+                  <li>Designing and implementing scalable processes</li>
+                  <li>Optimizing operational efficiency</li>
+                  <li>Developing and tracking performance metrics</li>
+                  <li>Streamlining program workflows</li>
+                  <li>Implementing best practices in program management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card flip-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Strategic Planning</h3>
+                <p style="text-align: center;">Expert in organizational turnaround strategies, including strategic plan development, SWOT analysis, goal setting, change management, roadmap creation, and performance monitoring.</p>
+              </div>
+              <div class="card-back">
+                <h3>Organizational Turnaround Strategies</h3>
+                <ul>
+                  <li>Expertise in developing and executing strategic plans</li>
+                  <li>Conducting comprehensive SWOT Analysis</li>
+                  <li>Facilitating effective Goal Setting processes</li>
+                  <li>Implementing Change Management initiatives</li>
+                  <li>Creating and following Strategic Roadmaps</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-container">
+          <div class="skills-carousel">
+            <div class="skill-item" data-animation="fade-in-rotate">
+              <i class="fas fa-chart-line"></i>
+              <h4>Financial Analysis</h4>
+              <p>Expert in financial modeling and forecasting</p>
+            </div>
+            <div class="skill-item" data-animation="slide-up-bounce">
+              <i class="fas fa-users"></i>
+              <h4>Team Leadership</h4>
+              <p>Experienced in managing cross-functional teams</p>
+            </div>
+            <div class="skill-item" data-animation="zoom-in-flip">
+              <i class="fas fa-project-diagram"></i>
+              <h4>Project Management</h4>
+              <p>Proficient in Agile and traditional methodologies</p>
+            </div>
+            <div class="skill-item" data-animation="fade-in-rotate">
+              <i class="fas fa-globe-africa"></i>
+              <h4>International Experience</h4>
+              <p>Worked on projects across multiple African countries</p>
+            </div>
+            <div class="skill-item" data-animation="slide-up-bounce">
+              <i class="fas fa-handshake"></i>
+              <h4>Stakeholder Management</h4>
+              <p>Skilled in building and maintaining key relationships</p>
+            </div>
+            <div class="skill-item" data-animation="zoom-in-flip">
+              <i class="fas fa-lightbulb"></i>
+              <h4>Innovation</h4>
+              <p>Driving creative solutions to complex problems</p>
+            </div>
+          </div>
+        </div>
+        <style>
+          .skills-container {
+            overflow: hidden;
+            padding: 1rem 0;
+          }
+          .skills-carousel {
+            display: flex;
+            animation: scroll 30s linear infinite;
+          }
+          .skill-item {
+            flex: 0 0 300px;
+            background-color: #1a1a1a;
+            color: #dac5a7;
+            font-family: 'Poppins', sans-serif;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-right: 1rem;
+          }
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+          @media (max-width: 768px) {
+            .skill-item {
+              flex: 0 0 250px;
+            }
+          }
+          @keyframes fadeInRotate {
+            0% {
+              opacity: 0;
+              transform: rotate(-45deg) scale(0.5);
+            }
+            100% {
+              opacity: 1;
+              transform: rotate(0) scale(1);
+            }
+          }
+          @keyframes slideUpBounce {
+            0%, 20%, 50%, 80%, 100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-30px);
+            }
+            60% {
+              transform: translateY(-15px);
+            }
+          }
+          @keyframes zoomInFlip {
+            0% {
+              opacity: 0;
+              transform: scale(0.1) rotateY(180deg);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1) rotateY(0deg);
+            }
+          }
+          .skill-item[data-animation="fade-in-rotate"] {
+            animation: fadeInRotate 1s ease forwards;
+          }
+          .skill-item[data-animation="slide-up-bounce"] {
+            animation: slideUpBounce 1s ease forwards;
+          }
+          .skill-item[data-animation="zoom-in-flip"] {
+            animation: zoomInFlip 1s ease forwards;
+          }
+        </style>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.skills-carousel');
+            const items = carousel.children;
+            const itemWidth = items[0].offsetWidth;
+            let position = 0;
+            const speed = 0.5; // Adjust speed as needed
+
+            // Clone the first item and append it to the end
+            carousel.appendChild(items[0].cloneNode(true));
+
+            function moveCarousel() {
+              position -= speed;
+              if (position <= -itemWidth) {
+                position += itemWidth;
+                carousel.style.transition = 'none';
+                carousel.style.transform = `translateX(${position}px)`;
+                // Force reflow
+                carousel.offsetHeight;
+                carousel.style.transition = 'transform 0.5s ease';
+              }
+              carousel.style.transform = `translateX(${position}px)`;
+              requestAnimationFrame(moveCarousel);
+            }
+
+            moveCarousel();
+          });
+        </script>
+
+        <div class="journey-container">
+          <h2 class="title fade-in">My Professional Odyssey</h2>
+          <div class="journey-grid">
+            <div class="journey-item journey-item-1" data-aos="fade-up" data-aos-delay="100">
+              <div class="journey-content">
+                <h4 class="journey-title">Head of Program Operations</h4>
+                <h5 class="journey-company">AECF</h5>
+                <p class="journey-date">Oct 2023 - Present</p>
+                <p class="journey-description">Spearheading scalable processes and systems for program delivery across Africa.</p>
+                <div class="journey-achievements">
+                  <span class="achievement-tag">30% Efficiency Boost</span>
+                  <span class="achievement-tag">PM Tool Implementation</span>
+                  <span class="achievement-tag">20+ Team Leadership</span>
+                </div>
+              </div>
+            </div>
+            <div class="journey-item journey-item-2" data-aos="fade-up" data-aos-delay="200">
+              <div class="journey-content">
+                <h4 class="journey-title">Senior Manager, Risk & Compliance</h4>
+                <h5 class="journey-company">Kenya Airways</h5>
+                <p class="journey-date">Jan 2022 - Oct 2023</p>
+                <p class="journey-description">Orchestrated Risk & Compliance Framework supporting Turnaround Strategy.</p>
+                <div class="journey-achievements">
+                  <span class="achievement-tag">40% Risk Reduction</span>
+                  <span class="achievement-tag">Compliance Training Program</span>
+                  <span class="achievement-tag">Strategic Planning</span>
+                </div>
+              </div>
+            </div>
+            <div class="journey-item journey-item-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="journey-content">
+                <h4 class="journey-title">Enterprise Risk Manager</h4>
+                <h5 class="journey-company">AECF</h5>
+                <p class="journey-date">Jul 2018 - Dec 2021</p>
+                <p class="journey-description">Pioneered enterprise risk management function and risk strategy implementation.</p>
+                <div class="journey-achievements">
+                  <span class="achievement-tag">10-Country Risk Toolkit</span>
+                  <span class="achievement-tag">100+ Staff Workshops</span>
+                  <span class="achievement-tag">Executive Risk Dashboard</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .journey-container {
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+          }
+          .journey-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+          }
+          .journey-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+          }
+          .journey-item::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+            opacity: 0;
+          }
+          .journey-item:hover::before {
+            opacity: 1;
+          }
+          .journey-title {
+            font-size: 1.5rem;
+            color: #dac5a7;
+            margin-bottom: 0.5rem;
+          }
+          .journey-company {
+            font-size: 1.2rem;
+            color: #a18c6a;
+            margin-bottom: 0.5rem;
+          }
+          .journey-date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+          }
+          .journey-description {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+          }
+          .journey-achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+          }
+          .achievement-tag {
+            background: rgba(218, 197, 167, 0.2);
+            color: #dac5a7;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+          }
+          @media (max-width: 768px) {
+            .journey-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+        </style>
+        <div class="testimonial-container">
+          <h3 class="testimonial-title">What Others Say</h3>
+          <div class="testimonial-carousel">
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <div class="testimonial">
+                  <p>"Dorcas's strategic approach to risk management has been instrumental in our organization's growth. Her ability to navigate complex challenges while maintaining a focus on our mission is truly remarkable."</p>
+                  <div class="testimonial-author">- John Doe, CEO of XYZ Corporation</div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="testimonial">
+                  <p>"Working with Dorcas has been a game-changer for our company. Her insights into program operations have streamlined our processes and significantly boosted our efficiency."</p>
+                  <div class="testimonial-author">- Jane Smith, COO of ABC Enterprises</div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="testimonial">
+                  <p>"Dorcas's leadership in implementing our new risk management framework was exceptional. Her expertise and dedication have set a new standard in our industry."</p>
+                  <div class="testimonial-author">- Robert Johnson, Board Member at Global Risk Solutions</div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-button prev">&lt;</button>
+            <button class="carousel-button next">&gt;</button>
+          </div>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+
+      <style>
+        .testimonial-container {
+          background-color: #1a1a1a;
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          max-width: 100%;
+          overflow: hidden;
+        }
+
+        .testimonial-title {
+          color: #dac5a7;
+          text-align: center;
+          margin-bottom: 1.5rem;
+          font-size: 1.8rem;
+        }
+
+        .testimonial-carousel {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .carousel-container {
+          display: flex;
+          transition: transform 0.5s ease;
+          width: 300%; /* Adjust to show 3 slides */
+        }
+
+        .carousel-slide {
+          flex: 0 0 33.333%; /* Show 1/3 of each slide */
+          padding: 0 1rem;
+          box-sizing: border-box;
+        }
+
+        .testimonial {
+          background-color: #2a2a2a;
+          padding: 1.5rem;
+          border-radius: 8px;
+          color: #f0f0f0;
+          margin: 0 0.5rem; /* Add margin to create space between slides */
+        }
+
+        .testimonial p {
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+          text-align: right;
+          color: #dac5a7;
+          font-weight: bold;
+        }
+
+        .carousel-button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(218, 197, 167, 0.3);
+          color: #fff;
+          border: none;
+          font-size: 1.5rem;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          z-index: 10;
+        }
+
+        .carousel-button:hover {
+          background-color: rgba(218, 197, 167, 0.5);
+        }
+
+        .carousel-button.prev {
+          left: 10px;
+        }
+
+        .carousel-button.next {
+          right: 10px;
+        }
+
+        .carousel-dots {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+        }
+
+        .dot {
+          width: 10px;
+          height: 10px;
+          background-color: #555;
+          border-radius: 50%;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        .dot.active {
+          background-color: #dac5a7;
+        }
+
+        @media (max-width: 768px) {
+          .testimonial-container {
+            padding: 1rem;
+          }
+
+          .carousel-button {
+            font-size: 1rem;
+            padding: 0.3rem 0.6rem;
+          }
+
+          .testimonial p {
+            font-size: 0.9rem;
+          }
+
+          .testimonial-author {
+            font-size: 0.8rem;
+          }
+        }
+      </style>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const carousel = document.querySelector('.carousel-container');
+          const slides = document.querySelectorAll('.carousel-slide');
+          const prevButton = document.querySelector('.carousel-button.prev');
+          const nextButton = document.querySelector('.carousel-button.next');
+          const dotsContainer = document.querySelector('.carousel-dots');
+
+          let currentIndex = 0;
+          let intervalId;
+
+          function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 33.333}%)`; // Adjust for 3 slides
+            updateDots();
+          }
+
+          function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+              dot.classList.toggle('active', index === currentIndex);
+            });
+          }
+
+          function createDots() {
+            slides.forEach((_, index) => {
+              const dot = document.createElement('div');
+              dot.classList.add('dot');
+              if (index === 0) dot.classList.add('active');
+              dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+                resetInterval();
+              });
+              dotsContainer.appendChild(dot);
+            });
+          }
+
+          function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+          }
+
+          function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+          }
+
+          function resetInterval() {
+            clearInterval(intervalId);
+            intervalId = setInterval(nextSlide, 5000);
+          }
+
+          prevButton.addEventListener('click', () => {
+            prevSlide();
+            resetInterval();
+          });
+
+          nextButton.addEventListener('click', () => {
+            nextSlide();
+            resetInterval();
+          });
+
+          createDots();
+
+          // Auto-advance carousel
+          intervalId = setInterval(nextSlide, 5000);
+
+          // Pause auto-advance on hover
+          carousel.addEventListener('mouseenter', () => clearInterval(intervalId));
+          carousel.addEventListener('mouseleave', resetInterval);
+
+          // Handle touch events for mobile
+          let touchStartX = 0;
+          let touchEndX = 0;
+
+          carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+          });
+
+          carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+          });
+
+          function handleSwipe() {
+            if (touchStartX - touchEndX > 50) {
+              nextSlide();
+            } else if (touchEndX - touchStartX > 50) {
+              prevSlide();
+            }
+            resetInterval();
+          }
+
+          // Initial update
+          updateCarousel();
+        });
+      </script>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.animationPlayState = 'running';
+            }
+          });
+        });
+
+        document.querySelectorAll('.fade-in, .slide-in, .rotate-in, .fade-in-up, .slide-in-left, .slide-in-right').forEach(el => {
+          el.style.animationPlayState = 'paused';
+          observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+
+        // Animated counter for skills
+        const counters = document.querySelectorAll('.skill-item');
+        counters.forEach(counter => {
+          counter.addEventListener('mouseenter', () => {
+            const icon = counter.querySelector('i');
+            icon.style.transform = 'scale(1.2)';
+            icon.style.transition = 'transform 0.3s ease';
+          });
+          counter.addEventListener('mouseleave', () => {
+            const icon = counter.querySelector('i');
+            icon.style.transform = 'scale(1)';
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2023 Dorcas Wangui Shamalla. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
